@@ -84,13 +84,28 @@
 
   <section id="projects" class="bg-white py-8 px-6 md:px-20">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold mb-10">Projects</h2>
+      <div class="flex">
+      <h2 class="text-3xl font-bold mr-auto">Projects</h2>
+
+      <!-- Category Tabs -->
+<div class="flex flex-wrap gap-4 justify-center mb-10">
+  <button class="tab-btn active-tab px-4 py-2 rounded-full bg-gray-900 text-white font-semibold shadow-md transition"
+    data-category="all">All</button>
+  <button class="tab-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition"
+    data-category="Masterplan">Masterplan</button>
+  <button class="tab-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition"
+    data-category="Bar & Restaurant">Bar & Restaurant</button>
+  <button class="tab-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 font-medium transition"
+    data-category="Residentials">Residentials</button>
+</div>
+
+      </div>
 
       <!-- Grid layout -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- Project Card -->
-        <a href="/layaungtaw-detail.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
+        <a href="/layaungtaw-detail.html" data-category="Masterplan" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
           <img src="/images/project-list/LaYaungTaw.png" alt="La Yaung Taw"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
@@ -99,8 +114,8 @@
             <span class="text-sm text-gray-300">Masterplan</span>
           </div>
         </a>
-        <a href="/shanyoema-detail.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/project-list/ShanYoeMa.jpg" alt="La Yaung Taw"
+        <a href="/shanyoema-detail.html" data-category="Masterplan" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
+          <img src="/images/project-list/ShanYoeMa.jpg" alt="Shan Yoe Ma"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
           <div class="absolute bottom-0 left-0 p-4 text-white">
@@ -108,8 +123,8 @@
             <span class="text-sm text-gray-300">Masterplan</span>
           </div>
         </a>
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/project-list/GolfCourse.png" alt="La Yaung Taw"
+        <a href="/projects/la-yaung-taw.html" data-category="Masterplan" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
+          <img src="/images/project-list/GolfCourse.png" alt="Tachileik Golf"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
           <div class="absolute bottom-0 left-0 p-4 text-white">
@@ -117,8 +132,8 @@
             <span class="text-sm text-gray-300">Masterplan</span>
           </div>
         </a>
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/project-list/WeedingGarden.png" alt="La Yaung Taw"
+        <a href="/projects/la-yaung-taw.html" data-category="Masterplan" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
+          <img src="/images/project-list/WeedingGarden.png" alt="Weeding Garden"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
           <div class="absolute bottom-0 left-0 p-4 text-white">
@@ -126,8 +141,8 @@
             <span class="text-sm text-gray-300">Masterplan</span>
           </div>
         </a>
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/project-list/TOCGasStation.png" alt="La Yaung Taw"
+        <a href="/tocgas-detail.html" data-category="Masterplan" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
+          <img src="/images/project-list/TOCGasStation.png" alt="TOC Gas"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
           <div class="absolute bottom-0 left-0 p-4 text-white">
@@ -135,7 +150,7 @@
             <span class="text-sm text-gray-300">Masterplan</span>
           </div>
         </a>
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
+        <a href="/projects/la-yaung-taw.html" data-category="Masterplan" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
           <img src="/images/project-list/NanMyaing.png" alt="La Yaung Taw"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
@@ -147,8 +162,8 @@
 
 
         <!-- Bar & Restaurants -->
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/project-list/HaoChiLin.png" alt="La Yaung Taw"
+        <a href="/projects/la-yaung-taw.html" data-category="Bar & Restaurant" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
+          <img src="/images/project-list/HaoChiLin.png" alt="HaoChiLin"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
           <div class="absolute bottom-0 left-0 p-4 text-white">
@@ -156,7 +171,7 @@
             <span class="text-sm text-gray-300">Bar & Restaurant</span>
           </div>
         </a>
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
+        <a href="/projects/la-yaung-taw.html" data-category="Bar & Restaurant" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
           <img src="/images/project-list/AMyee.png" alt="La Yaung Taw"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
@@ -165,7 +180,7 @@
             <span class="text-sm text-gray-300">Bar & Restaurant</span>
           </div>
         </a>
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
+        <a href="/projects/la-yaung-taw.html" data-category="Bar & Restaurant" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
           <img src="/images/project-list/GTBar.png" alt="La Yaung Taw"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
@@ -176,7 +191,7 @@
         </a>
 
         <!-- Residentials -->
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
+        <a href="/projects/la-yaung-taw.html" data-category="Residentials" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
           <img src="/images/project-list/NgweLoonChi.png" alt="La Yaung Taw"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
@@ -185,7 +200,7 @@
             <span class="text-sm text-gray-300">Residentials</span>
           </div>
         </a>
-        <a href="/ygnnorth-detail.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
+        <a href="/ygnnorth-detail.html" data-category="Residentials" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
           <img src="/images/project-list/PrivateHouseDagon.png" alt="La Yaung Taw"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
@@ -194,7 +209,7 @@
             <span class="text-sm text-gray-300">Residentials</span>
           </div>
         </a>
-        <a href="/projects/la-yaung-taw.html" class="group relative block overflow-hidden rounded-lg shadow-lg">
+        <a href="/projects/la-yaung-taw.html" data-category="Residentials" class="project-card group relative block overflow-hidden rounded-lg shadow-lg">
           <img src="/images/project-list/PrivateHouseYankin.png" alt="La Yaung Taw"
             class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
@@ -217,5 +232,7 @@
 
 
 </body>
+
+<script src="category-tab.js"></script>
 
 </html>
